@@ -58,3 +58,25 @@ function EvenOdd() {
     console.log("Hai perso");
   }
 }
+
+const text = "Otto";
+//["C", "a","s","a"] > ["a","s","a","C"]>"asaC"
+
+const reversedText = giraParola(text);
+if (text.toLowerCase === reversedText.toLowerCase()) {
+  console.log("La parola palindroma");
+}
+
+//const reversedText = text.split("").reverse().join("");//
+
+console.log(reversedText);
+
+function giraParola(parola) {
+  let reversedParola = "";
+
+  for (let i = parola.length - 1; i >= 0; i--) {
+    reversedParola = reversedParola + parola[i];
+    //console.log(reversedText);
+  }
+  return reversedParola;
+}
